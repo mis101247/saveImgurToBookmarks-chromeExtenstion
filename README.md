@@ -23,11 +23,14 @@
 2. - `存位置我的書籤/Imgurs/.`
    - `yourBookmarks/Imgurs/.`
 
+<img src="https://github.com/mis101247/saveImgurToBookmarks-chromeExtenstion/blob/master/demo.gif?raw=true" data-canonical-src="https://github.com/mis101247/saveImgurToBookmarks-chromeExtenstion/blob/master/demo.gif?raw=true" width="600" height="400" />
+
 --- 
 
 ### Installation
 
 - [Chrome Extensions](chrome://extensions/)
+![](https://developer.chrome.com/static/images/get_started/load_extension.png)
 
 ---
 
