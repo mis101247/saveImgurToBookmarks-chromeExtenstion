@@ -20,8 +20,8 @@
 1. - 對圖片按右鍵 > 好圖，我要啦！！  
    - Right Click Images > 好圖，我要啦！！
 
-2. - `存位置我的書籤/ImgurImageFight/.`
-   - `yourBookmarks/ImgurImageFight/.`
+2. - `存位置我的書籤/Imgurs/.`
+   - `yourBookmarks/Imgurs/.`
 
 --- 
 

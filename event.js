@@ -11,7 +11,7 @@ function genericOnClick(info, tab) {
         if (!imageTitle) {
             return;
         }
-        let thisBookmarkTitle = "ImgurImageFight";
+        let thisBookmarkTitle = "Imgurs";
         chrome.bookmarks.search({ "title": thisBookmarkTitle }, function (obj) {
             if (obj.length>0) { 
                 let thisBookmarkId = obj[0].id;
