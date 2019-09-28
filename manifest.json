@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "SaveImgurToBookmarks",
+    "description": "把各地方看到Imgur的梗圖加入我的最愛，以便之後圖戰用 ：）",
+    "version": "1.0",
+    "permissions": ["contextMenus", "bookmarks"],
+    "icons": {
+        "16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "32": "images/icon32.png",
+        "128": "images/icon128.png"
+    },
+    "background": {
+        "scripts": ["event.js"],
+        "persistent": true
+    }
+}
