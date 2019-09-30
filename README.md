@@ -6,6 +6,7 @@
 ### Feature
 
 - 搜尋功能，圖戰就是要嘴得快
+- 點擊就複製
 
 ---
 
@@ -24,6 +25,12 @@
    - `yourBookmarks/Imgurs/.`
 
 <img src="https://github.com/mis101247/saveImgurToBookmarks-chromeExtenstion/blob/master/demo.gif?raw=true" data-canonical-src="https://github.com/mis101247/saveImgurToBookmarks-chromeExtenstion/blob/master/demo.gif?raw=true" width="600" height="400" />
+
+3. - popup 點擊右上角的icon有搜尋圖片功能！！
+   - popup click icon && search!!
+   
+   <img src="https://imgur.com/Cah5KXo.jpg" data-canonical-src="https://imgur.com/Cah5KXo.jpg" width="500" height="600" />
+
 
 --- 
 
@@ -49,3 +56,12 @@ Distributed under the MIT License.
 - [Chrome Extension Official](https://developer.chrome.com/extensions/getstarted)
 
 - [Icon](https://www.flaticon.com/free-icon/sword_2119265#term=fight&page=1&position=13)
+
+- [Bootstrap Image Gallery](https://mdbootstrap.com/plugins/jquery/gallery/)
+
+- [bookmarks.search()](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/bookmarks/search)
+
+## Solution
+
+- [String to Dom](https://stackoverflow.com/questions/3103962/converting-html-string-into-dom-elements)
+
