@@ -12,8 +12,7 @@
 
 ### Built With
 
-- Javascript
-- Chrome extensions
+- Chrome Extenstion built on web technologies such as HTML, JavaScript, and CSS.
 
 --- 
 
