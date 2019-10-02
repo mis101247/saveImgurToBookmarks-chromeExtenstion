@@ -60,7 +60,9 @@ Distributed under the MIT License.
 
 - [bookmarks.search()](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/bookmarks/search)
 
+
 ## Solution
 
 - [String to Dom](https://stackoverflow.com/questions/3103962/converting-html-string-into-dom-elements)
 
+- [copyStringToClipboard](https://techoverflow.net/2018/03/30/copying-strings-to-the-clipboard-using-pure-javascript/)
