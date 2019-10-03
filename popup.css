@@ -10,9 +10,12 @@ body {
     margin: 20px;
 }
 
-.fadeIn{
+#copied{
     position: absolute;
-    right: 20px;
+    right: -200px;
+}
+
+.fadeIn{
     bottom: 20px;
     width: 160px;
     height: 40px;
