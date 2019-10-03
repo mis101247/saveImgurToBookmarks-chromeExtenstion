@@ -26,7 +26,7 @@ document.querySelector('.gallery_box').addEventListener('click', (_this) => {
     if (a_element) {
         let clipBoardContent = _this.toElement.closest('a').querySelector('img').src;
         copyStringToClipboard(clipBoardContent);
-        // TODO 秀複製成功訊息
+        showCopied();
     }
 });
 
@@ -65,5 +65,23 @@ let copyStringToClipboard = (str)=> {
     document.execCommand('copy');
     // Remove temporary element
     document.body.removeChild(el);
+}
+
+let setTimeoutId = null;
+let showCopied = () => {
+    var element = document.getElementById("copied");
+    element.classList.remove('fadeIn');
+    setTimeout(function () {
+        element.classList.add('fadeIn');
+    }, 1);
+
+    if (setTimeoutId) {
+        clearTimeout(setTimeoutId);
+        setTimeoutId = null;
+    }
+    setTimeoutId = setTimeout(function () {
+        //TODO 淡出效果
+        element.classList.remove("fadeIn");
+    }, 1500);
 }
 

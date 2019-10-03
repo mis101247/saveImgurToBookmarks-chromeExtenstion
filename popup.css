@@ -10,6 +10,30 @@ body {
     margin: 20px;
 }
 
+.fadeIn{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 160px;
+    height: 40px;
+    background-color: #1FDA4A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: #fff;
+    animation:fadeInfun 0.8s infinite; 
+    animation-iteration-count: 1
+}
+
+@keyframes fadeInfun{
+    from {right:-200px;}
+    to {right:20px;}
+    0%   { opacity:0; }
+    50%  { opacity:0.5; }
+    100% { opacity:1; }
+}
+
 img{ max-width:100%;}
 
 .gallery_box li{ width:33.333333%; max-width: 100% ; display:inline-block; float: left; text-align: center; overflow: hidden;    position: relative;}
