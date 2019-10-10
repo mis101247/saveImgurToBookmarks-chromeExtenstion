@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-    chrome.bookmarks.search({ "title": 'Imgurs' }, function (parent) {
-        var parentId = parent[0].id;
+    chrome.bookmarks.search({ "title": '#imgur' }, function (parent) {
+        let parentId = parent[0].id;
         chrome.bookmarks.getChildren(parentId, function (result) {
             inject(parentId, result);
         });
@@ -8,12 +8,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-let searchObj = document.querySelector('#search');
+const searchObj = document.querySelector('#search');
 searchObj.addEventListener('keypress', function (e) {
-    var key = e.which || e.keyCode;
+    let key = e.which || e.keyCode;
     if (key === 13) { // 13 is enter
-        chrome.bookmarks.search({ "title": 'Imgurs' }, function (parent) {
-            var parentId = parent[0].id;
+        chrome.bookmarks.search({ "title": '#imgur' }, function (parent) {
+            let parentId = parent[0].id;
             chrome.bookmarks.search(searchObj.value, function (result) {
                 inject(parentId, result);
             });
@@ -30,13 +30,14 @@ document.querySelector('.gallery_box').addEventListener('click', (_this) => {
     }
 });
 
-let inject = (parentId, result) => {
-    var arr = result.filter(r => r.parentId == parentId);
+const inject = (parentId, result) => {
+    let arr = result.filter(r => r.parentId == parentId);
     if (arr.length > 0) { document.querySelector('.gallery_box').innerHTML = ''; }
+    if (arr.length > 6) { shuffleArray(arr) }
     for (const [index, item] of arr.entries()) {
         //Todo 圖多要Random
         if (index > 6) { break; }
-        var content = `
+        let content = `
                         <li>
                             <a href="#" class="imgur" ><img src="${item.url}">
                                 <div class="box_data">
@@ -44,15 +45,15 @@ let inject = (parentId, result) => {
                                 </div>
                             </a>
                         </li>`;
-        var temp = document.createElement('div');
+        let temp = document.createElement('div');
         temp.innerHTML = content.trim();
         document.querySelector('.gallery_box').append(temp.firstChild);
     };
 }
 
-let copyStringToClipboard = (str)=> {
+const copyStringToClipboard = (str)=> {
     // Create new element
-    var el = document.createElement('textarea');
+    let el = document.createElement('textarea');
     // Set value (string to be copied)
     el.value = str;
     // Set non-editable to avoid focus and move outside of view
@@ -68,8 +69,8 @@ let copyStringToClipboard = (str)=> {
 }
 
 let setTimeoutId = null;
-let showCopied = () => {
-    var element = document.getElementById("copied");
+const showCopied = () => {
+    let element = document.getElementById("copied");
     element.classList.remove('fadeIn');
     setTimeout(function () {
         element.classList.add('fadeIn');
@@ -82,6 +83,15 @@ let showCopied = () => {
     setTimeoutId = setTimeout(function () {
         //TODO 淡出效果
         element.classList.remove("fadeIn");
+        console.log('exist');
     }, 1500);
 }
 
+const shuffleArray = (array) => {
+    for (let i = 5; i > 0; i--) {
+        const j = Math.floor(Math.random() * (array.length));
+        console.log([array[j], array[i]]);
+        console.log(j,i);
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
