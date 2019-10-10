@@ -35,8 +35,7 @@ const inject = (parentId, result) => {
     if (arr.length > 0) { document.querySelector('.gallery_box').innerHTML = ''; }
     if (arr.length > 6) { shuffleArray(arr) }
     for (const [index, item] of arr.entries()) {
-        //Todo 圖多要Random
-        if (index > 6) { break; }
+        if (index === 6) { break; }
         let content = `
                         <li>
                             <a href="#" class="imgur" ><img src="${item.url}">
@@ -88,10 +87,8 @@ const showCopied = () => {
 }
 
 const shuffleArray = (array) => {
-    for (let i = 5; i > 0; i--) {
+    for (let i = 5; i >= 0; i--) {
         const j = Math.floor(Math.random() * (array.length));
-        console.log([array[j], array[i]]);
-        console.log(j,i);
         [array[i], array[j]] = [array[j], array[i]];
     }
 }
