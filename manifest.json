@@ -19,8 +19,8 @@
         ]
     },
     "browser_action": {
-        "default_title": "羅拉拉的第一個擴充套件",
+        "default_title": "拿起干戈，打戰囉！！",
         "default_icon": "images/icon32.png",
-        "default_popup": "popup.html"
+        "default_popup": "popup/index.html"
     }
 }
