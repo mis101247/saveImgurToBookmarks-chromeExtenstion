@@ -39,7 +39,7 @@ body {
 
 img{ max-width:100%;}
 
-.gallery_box li{ width:33.333333%; max-width: 100% ; display:inline-block; float: left; text-align: center; overflow: hidden;    position: relative;}
+.gallery_box li{ height:200px; width:33.333333%; max-width: 100% ; display:inline-block; float: left; text-align: center; overflow: hidden;    position: relative;}
 .gallery_box{ padding:0;display: flow-root;}
 
 .gallery_box li:hover img {
@@ -51,7 +51,8 @@ img{ max-width:100%;}
 }
 .gallery_box li img{-webkit-transition: transform 0.5s ease;
     -o-transition: transform 0.5s ease;
-    transition: transform 0.5s ease;}
+    transition: transform 0.5s ease;
+    height:200px;}
 .gallery_box li:nth-child{
     height: 200px; 
 }
