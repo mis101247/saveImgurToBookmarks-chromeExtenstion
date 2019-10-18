@@ -1,11 +1,11 @@
 function genericOnClick(info, tab) {
     if (!info.srcUrl) {
-        alert('限儲存imgur圖片路徑！');
+        alert(`${ info.srcUrl }\n❌這個圖片url格式錯誤❌`);
         return;
     }
-    let valid = /^https{0,1}:\/\/i\.imgur\.com/.exec(info.srcUrl);
+    let valid = /(^https{0,1}:\/\/i\.imgur\.com(.*?)\.(?:jpg|gif|png)\??([\w+=%&.~\-]*)$)|(^https{0,1}:\/\/media.giphy.com(.*?)\.(?:jpg|gif)\??([\w+=%&.~\-]*)$)/i.exec(info.srcUrl);
     if (valid === null) {
-        alert('限imgur圖片');        
+        alert(`${info.srcUrl}\n❌這個圖片url格式錯誤❌\n🍚範例如下：\n[imgur] i.imgur.com/*.jpg|gif \n[giphy] media.giphy.com/*.jpg|gif`);
     } else {
         let imageTitle = prompt("*請輸入標題:");
         if (!imageTitle) {
