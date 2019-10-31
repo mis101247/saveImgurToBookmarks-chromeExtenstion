@@ -3,14 +3,6 @@
 - 將喜歡的Imgur圖片儲存到你的書籤列中
 - Save Imgur image URL to your bookmarks.
 - 將在十一月上架哦！
-
-### Feature
-
-- [x] 搜尋功能，圖戰就是要嘴得快
-- [x] 點擊就複製
-- [ ] Create Options Page.
-- [ ] 支援其他圖庫
-
 ---
 
 ### Built With
