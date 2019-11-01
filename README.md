@@ -15,8 +15,8 @@
 1. - 對圖片按右鍵 > 好圖，我要啦！！  
    - Right Click Images > 好圖，我要啦！！
 
-2. - `存位置我的書籤/Imgurs/.`
-   - `yourBookmarks/Imgurs/.`
+2. - `存位置我的書籤/#images/.`
+   - `yourBookmarks/#images/.`
 
 <img src="https://github.com/mis101247/saveImgurToBookmarks-chromeExtenstion/blob/master/demo.gif?raw=true" data-canonical-src="https://github.com/mis101247/saveImgurToBookmarks-chromeExtenstion/blob/master/demo.gif?raw=true" width="600" height="400" />
 

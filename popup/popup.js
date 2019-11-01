@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    chrome.bookmarks.search({ "title": '#imgur' }, function (parent) {
+    chrome.bookmarks.search({ "title": '#images' }, function (parent) {
         let parentId = parent[0].id;
         chrome.bookmarks.getChildren(parentId, function (result) {
             inject(parentId, result);
@@ -12,7 +12,7 @@ const searchObj = document.querySelector('#search');
 searchObj.addEventListener('keypress', function (e) {
     let key = e.which || e.keyCode;
     if (key === 13) { // 13 is enter
-        chrome.bookmarks.search({ "title": '#imgur' }, function (parent) {
+        chrome.bookmarks.search({ "title": '#images' }, function (parent) {
             let parentId = parent[0].id;
             chrome.bookmarks.search(searchObj.value, function (result) {
                 inject(parentId, result);
