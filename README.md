@@ -2,7 +2,7 @@
 
 - 將喜歡的Imgur圖片儲存到你的書籤列中
 - Save Imgur image URL to your bookmarks.
-- 將在十一月上架哦！
+- 已發佈至[Google Chrome Extenstion](https://chrome.google.com/webstore/detail/saveimgurtobookmarks/ingmgickmbcogeeedeepfjjiojfggpkn)
 ---
 
 ### Built With
