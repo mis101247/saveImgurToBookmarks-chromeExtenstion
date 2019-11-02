@@ -23,8 +23,7 @@
 3. - popup 點擊右上角的icon有搜尋圖片功能！！
    - popup click icon && search!!
    
-   <img src="https://imgur.com/Cah5KXo.jpg" data-canonical-src="https://imgur.com/Cah5KXo.jpg" width="500" height="600" />
-
+<img width="612" alt="demo" src="https://user-images.githubusercontent.com/15373178/68075242-1f3b6a80-fde0-11e9-90d9-94e181625af1.png">
 
 --- 
 
