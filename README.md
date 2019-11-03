@@ -27,7 +27,7 @@
 
 --- 
 
-### Installation
+### Installation （如要進行開發
 
 - [Chrome Extensions](chrome://extensions/)
 ![](https://developer.chrome.com/static/images/get_started/load_extension.png)
