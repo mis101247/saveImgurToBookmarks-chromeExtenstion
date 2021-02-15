@@ -1,8 +1,7 @@
 ## About The Project
 
-- 將喜歡的Imgur圖片儲存到你的書籤列中
-- Save Imgur image URL to your bookmarks.
-- 已發佈至[Google Chrome Extenstion](https://chrome.google.com/webstore/detail/saveimgurtobookmarks/ingmgickmbcogeeedeepfjjiojfggpkn)
+- Save Imgur image URL to your bookmarks. (將喜歡的Imgur圖片儲存到你的書籤列中)
+- Deployed [Google Chrome Extenstion](https://chrome.google.com/webstore/detail/saveimgurtobookmarks/ingmgickmbcogeeedeepfjjiojfggpkn)
 ---
 
 ### Built With
@@ -11,23 +10,20 @@
 
 --- 
 
-## Demo
-1. - 對圖片按右鍵 > 好圖，我要啦！！  
-   - Right Click Images > 好圖，我要啦！！
+## Usage
+1.  - Right Click Images > 好圖，我要啦！！ (對圖片按右鍵 > 好圖，我要啦！！ )
 
-2. - `存位置我的書籤/#images/.`
-   - `yourBookmarks/#images/.`
+2. - `yourBookmarks/#images/.` (`存位置我的書籤/#images/.`)
 
 <img src="https://github.com/mis101247/saveImgurToBookmarks-chromeExtenstion/blob/master/demo.gif?raw=true" data-canonical-src="https://github.com/mis101247/saveImgurToBookmarks-chromeExtenstion/blob/master/demo.gif?raw=true" width="600" height="400" />
 
-3. - popup 點擊右上角的icon有搜尋圖片功能！！
-   - popup click icon && search!!
+3. - popup click icon && search!! (popup 點擊右上角的icon有搜尋圖片功能！！)
    
 <img width="612" alt="demo" src="https://user-images.githubusercontent.com/15373178/68075242-1f3b6a80-fde0-11e9-90d9-94e181625af1.png">
 
 --- 
 
-### Installation （如要進行開發
+### Build
 
 - [Chrome Extensions](chrome://extensions/)
 ![](https://developer.chrome.com/static/images/get_started/load_extension.png)
