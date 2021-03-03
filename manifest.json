@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "SaveImgurToBookmarks",
     "description": "把各地方看到Imgur的梗圖加入我的最愛，以便之後圖戰用 ：）",
-    "version": "1.0",
+    "version": "1.1",
     "permissions": [
         "contextMenus",
         "bookmarks"
