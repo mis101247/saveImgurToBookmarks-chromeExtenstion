@@ -22,9 +22,9 @@ searchObj.addEventListener('keypress', function (e) {
 });
 
 document.querySelector('.gallery_box').addEventListener('click', (_this) => {
-    let a_element = _this.toElement.closest('a');
+    let a_element = _this.target.closest('a');
     if (a_element) {
-        let clipBoardContent = _this.toElement.closest('a').querySelector('img').src;
+        let clipBoardContent = _this.target.closest('a').querySelector('img').src;
         copyStringToClipboard(clipBoardContent);
         showCopied();
     }
